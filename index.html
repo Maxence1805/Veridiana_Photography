@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veridiana Photography</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x600/?wedding,photography') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #444;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Veridiana Photography</h1>
+    <p>Photographe indépendante - Mariages, naissances, grossesse & plus</p>
+  </header>
+
+  <nav>
+    <a href="#about">Qui suis-je ?</a>
+    <a href="#mariage">Mariage</a>
+    <a href="#naissance">Naissance</a>
+    <a href="#grossesse">Grossesse</a>
+    <a href="#bapteme">Baptême</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>Qui suis-je ?</h2>
+    <p>Je suis Veridiana, photographe passionnée spécialisée dans les moments précieux de la vie : mariages, naissances, grossesses, et plus encore. Mon approche est naturelle, douce, et tournée vers l'émotion authentique.</p>
+  </section>
+
+  <section id="mariage">
+    <h2>Mariage</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?wedding" alt="Mariage 1">
+      <img src="https://source.unsplash.com/400x300/?wedding,bride" alt="Mariage 2">
+    </div>
+  </section>
+
+  <section id="naissance">
+    <h2>Naissance</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?newborn" alt="Naissance 1">
+      <img src="https://source.unsplash.com/400x300/?baby" alt="Naissance 2">
+    </div>
+  </section>
+
+  <section id="grossesse">
+    <h2>Grossesse</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?pregnancy" alt="Grossesse 1">
+      <img src="https://source.unsplash.com/400x300/?maternity" alt="Grossesse 2">
+    </div>
+  </section>
+
+  <section id="bapteme">
+    <h2>Baptême</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?baptism" alt="Baptême 1">
+      <img src="https://source.unsplash.com/400x300/?baby,church" alt="Baptême 2">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Pour toute demande ou réservation, merci de me contacter à : <strong>veridiana.photo@email.com</strong><br>
+    Ou via Instagram : @veridiana_photography</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Veridiana Photography - Tous droits réservés
+  </footer>
+</body>
+</html>
