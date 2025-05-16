@@ -119,6 +119,17 @@
       margin-top: 40px;
       color: #6e5b4b;
     }
+    section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Classe active à ajouter lors du scroll */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
   </style>
 </head>
 <body>
@@ -234,5 +245,23 @@
   <footer>
     &copy; 2025 Veridiana Photography - Tous droits réservés
   </footer>
+  <script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Pour que l'animation ne se joue qu'une fois
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 </body>
 </html>
