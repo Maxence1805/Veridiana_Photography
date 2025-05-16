@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      color: #333;
+      background-color: #fff8f3;
+      color: #4a3f35;
     }
     header {
       background: url('https://source.unsplash.com/1600x600/?wedding,photography') center/cover no-repeat;
@@ -22,28 +22,34 @@
       margin: 0;
     }
     nav {
-      background-color: #222;
+      background-color: #decbb7;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
     nav a {
-      color: white;
+      color: #4a3f35;
       padding: 15px 20px;
       text-decoration: none;
       display: inline-block;
+      font-weight: bold;
     }
     nav a:hover {
-      background-color: #444;
+      background-color: #e8d6c3;
     }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-top: 20px;
     }
     h2 {
-      border-bottom: 2px solid #ccc;
+      border-bottom: 2px solid #d9b9a3;
       padding-bottom: 10px;
+      color: #a67c52;
     }
     .gallery {
       display: grid;
@@ -57,11 +63,35 @@
       display: block;
       border-radius: 5px;
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #a67c52;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #8c6742;
+    }
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #f1f1f1;
+      background-color: #f3e8dd;
       margin-top: 40px;
+      color: #6e5b4b;
     }
   </style>
 </head>
@@ -77,16 +107,18 @@
     <a href="#naissance">Naissance</a>
     <a href="#grossesse">Grossesse</a>
     <a href="#bapteme">Baptême</a>
+    <a href="#autres">Autres prestations</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>Qui suis-je ?</h2>
-    <p>Je suis Veridiana, photographe passionnée spécialisée dans les moments précieux de la vie : mariages, naissances, grossesses, et plus encore. Mon approche est naturelle, douce, et tournée vers l'émotion authentique.</p>
+    <p>Je suis Veridiana, photographe passionnée qui aime capturer les instants précieux de la vie. Mon objectif est de figer les émotions et les souvenirs à travers des clichés naturels et sensibles. Que ce soit pour un mariage, une grossesse, une naissance ou un baptême, je m'engage à offrir une prestation personnalisée, professionnelle et bienveillante. J'aime la lumière naturelle, les moments spontanés, et surtout les histoires humaines. Chaque séance est une nouvelle aventure partagée avec vous.</p>
   </section>
 
   <section id="mariage">
     <h2>Mariage</h2>
+    <p>Je propose des séances de mariage en intérieur ou en extérieur, en fonction de vos envies et du lieu de votre union. Mon approche est discrète, authentique, et centrée sur l'émotion du moment.</p>
     <div class="gallery">
       <img src="https://source.unsplash.com/400x300/?wedding" alt="Mariage 1">
       <img src="https://source.unsplash.com/400x300/?wedding,bride" alt="Mariage 2">
@@ -95,6 +127,7 @@
 
   <section id="naissance">
     <h2>Naissance</h2>
+    <p>Je réalise des séances photos de naissance aussi bien à domicile (en intérieur) qu’en extérieur lorsque le temps le permet. L’idée est de capturer la douceur et l’authenticité de ces premiers instants de vie.</p>
     <div class="gallery">
       <img src="https://source.unsplash.com/400x300/?newborn" alt="Naissance 1">
       <img src="https://source.unsplash.com/400x300/?baby" alt="Naissance 2">
@@ -103,6 +136,7 @@
 
   <section id="grossesse">
     <h2>Grossesse</h2>
+    <p>Les séances grossesse peuvent se dérouler en studio (intérieur) ou en pleine nature (extérieur), selon vos préférences. L’objectif est de mettre en valeur ce moment unique avec sensibilité et élégance.</p>
     <div class="gallery">
       <img src="https://source.unsplash.com/400x300/?pregnancy" alt="Grossesse 1">
       <img src="https://source.unsplash.com/400x300/?maternity" alt="Grossesse 2">
@@ -111,16 +145,29 @@
 
   <section id="bapteme">
     <h2>Baptême</h2>
+    <p>Je couvre les baptêmes à la fois en intérieur (église, maison) et en extérieur (jardin, réception) pour capturer chaque moment fort de cet événement symbolique et familial.</p>
     <div class="gallery">
       <img src="https://source.unsplash.com/400x300/?baptism" alt="Baptême 1">
       <img src="https://source.unsplash.com/400x300/?baby,church" alt="Baptême 2">
     </div>
   </section>
 
+  <section id="autres">
+    <h2>Autres prestations</h2>
+    <p>Je suis également disponible pour tout autre type d’événement : EVJF, portraits individuels ou en couple, événements d’entreprise, anniversaires, photos de famille, etc. N’hésitez pas à me faire part de votre projet, je suis toujours ravie de m’adapter à vos envies !</p>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>Pour toute demande ou réservation, merci de me contacter à : <strong>veridiana.photo@email.com</strong><br>
+    Téléphone : <strong>06.47.94.48.36</strong><br>
     Ou via Instagram : @veridiana_photography</p>
+    <form action="https://formspree.io/f/moqgjqqo" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
 
   <footer>
