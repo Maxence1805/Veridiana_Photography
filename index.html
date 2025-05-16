@@ -4,6 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veridiana Photography</title>
+  @media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding: 20px 15px;
+    margin: 15px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  input, textarea {
+    font-size: 1em;
+  }
+}
   <style>
     body {
       margin: 0;
