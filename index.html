@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Veridiana Photography</title>
   <style>
     body {
@@ -17,17 +17,14 @@
       text-align: center;
       padding: 100px 20px;
     }
-  header h1 {
-  font-size: 3em;
-  margin: 0;
-  color: #a67c52; /* Titre en brun doux */
-}
-
-header p {
-  color: #a67c52; /* Phrase en beige clair */
-  font-size: 1.2em;
-  margin-top: 10px;
-
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #e9d5c6;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #f7eae2;
     }
     nav {
       background-color: #decbb7;
@@ -53,52 +50,36 @@ header p {
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       margin-top: 20px;
-
-      /* ✅ Animation */
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
     }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     h2 {
       border-bottom: 2px solid #d9b9a3;
       padding-bottom: 10px;
       color: #a67c52;
     }
-
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 15px;
       margin-top: 20px;
     }
-
     .gallery img {
       width: 100%;
       height: auto;
       display: block;
       border-radius: 5px;
     }
-
     form {
       display: flex;
       flex-direction: column;
       gap: 15px;
       margin-top: 20px;
     }
-
     input, textarea {
       padding: 10px;
       font-size: 1em;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-
     button {
       background-color: #a67c52;
       color: white;
@@ -107,11 +88,9 @@ header p {
       border-radius: 5px;
       cursor: pointer;
     }
-
     button:hover {
       background-color: #8c6742;
     }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -124,7 +103,7 @@ header p {
 <body>
   <header>
     <h1>Veridiana Photography</h1>
-    <p>Photographe indépendante - Famille, naissances, grossesse & plus encore ... </p>
+    <p>Photographe indépendante - Famille, naissances, grossesse & plus encore ...</p>
   </header>
 
   <nav>
@@ -139,14 +118,16 @@ header p {
 
   <section id="about">
     <h2>Qui suis-je ?</h2>
-    <p>Je suis Veridiana, photographe passionnée qui aime capturer les instants précieux de la vie. Mon objectif est de figer les émotions et les souvenirs à travers des clichés naturels et sensibles. Que ce soit pour un mariage, une grossesse, une naissance ou un baptême, je m'engage à offrir une prestation personnalisée, professionnelle et bienveillante. J'aime la lumière naturelle, les moments spontanés, et surtout les histoires humaines. Chaque séance est une nouvelle aventure partagée avec vous.</p>
-<div class="gallery">
-  <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%204.JPEG" alt="Portrait Veridiana">
-</div>
+    <p>
+      Je suis Veridiana, photographe passionnée qui aime capturer les instants précieux de la vie. Mon objectif est de figer les émotions et les souvenirs à travers des clichés naturels et sensibles. Que ce soit pour un mariage, une grossesse, une naissance ou un baptême, je m'engage à offrir une prestation personnalisée, professionnelle et bienveillante. J'aime la lumière naturelle, les moments spontanés, et surtout les histoires humaines. Chaque séance est une nouvelle aventure partagée avec vous.
+    </p>
+    <div class="gallery">
+      <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%204.JPEG" alt="Portrait Veridiana">
+    </div>
   </section>
 
   <section id="mariage">
-    <h2>💍 Mariage</h2>
+    <h2>Mariage</h2>
     <p>Je propose des séances de mariage en intérieur ou en extérieur, en fonction de vos envies et du lieu de votre union. Mon approche est discrète, authentique, et centrée sur l'émotion du moment.</p>
     <div class="gallery">
       <img src="https://source.unsplash.com/400x300/?wedding" alt="Mariage 1">
@@ -155,16 +136,16 @@ header p {
   </section>
 
   <section id="naissance">
-    <h2>👶 Naissance</h2>
+    <h2>Naissance</h2>
     <p>Je réalise des séances photos de naissance aussi bien à domicile (en intérieur) qu’en extérieur lorsque le temps le permet. L’idée est de capturer la douceur et l’authenticité de ces premiers instants de vie.</p>
     <div class="gallery">
-      <img src="https://source.unsplash.com/400x300/?newborn" alt="Naissance 1">
-      <img src="https://source.unsplash.com/400x300/?baby" alt="Naissance 2">
+      <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%202.JPEG" alt="Autre prestation 2">
+      <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%203.JPEG" alt="Autre prestation 3">
     </div>
   </section>
 
   <section id="grossesse">
-    <h2>🤰 Grossesse</h2>
+    <h2>Grossesse</h2>
     <p>Les séances grossesse peuvent se dérouler en studio (intérieur) ou en pleine nature (extérieur), selon vos préférences. L’objectif est de mettre en valeur ce moment unique avec sensibilité et élégance.</p>
     <div class="gallery">
       <img src="https://source.unsplash.com/400x300/?pregnancy" alt="Grossesse 1">
@@ -173,7 +154,7 @@ header p {
   </section>
 
   <section id="bapteme">
-    <h2>⛪ Baptême</h2>
+    <h2>Baptême</h2>
     <p>Je couvre les baptêmes à la fois en intérieur (église, maison) et en extérieur (jardin, réception) pour capturer chaque moment fort de cet événement symbolique et familial.</p>
     <div class="gallery">
       <img src="https://source.unsplash.com/400x300/?baptism" alt="Baptême 1">
@@ -181,21 +162,19 @@ header p {
     </div>
   </section>
 
-<section id="autres">
-  <h2>Autres prestations</h2>
-  <p>Je suis également disponible pour tout autre type d’événement : EVJF, portraits individuels ou en couple, événements d’entreprise, anniversaires, photos de famille, etc. N’hésitez pas à me faire part de votre projet, je suis toujours ravie de m’adapter à vos envies !</p>
-  <div class="gallery">
-    <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%201.JPEG" alt="Autre prestation 1">
-    <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%202.JPEG" alt="Autre prestation 2">
-    <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%203.JPEG" alt="Autre prestation 3">
-    <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%205.JPEG" alt="Autre prestation 4">
-    <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%206.JPEG" alt="Autre prestation 5">
-  </div>
-</section>
+  <section id="autres">
+    <h2>Autres prestations</h2>
+    <p>Je suis également disponible pour tout autre type d’événement : EVJF, portraits individuels ou en couple, événements d’entreprise, anniversaires, photos de famille, etc. N’hésitez pas à me faire part de votre projet, je suis toujours ravie de m’adapter à vos envies !</p>
+    <div class="gallery">
+      <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%201.JPEG" alt="Autre prestation 1">
+      <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%205.JPEG" alt="Autre prestation 4">
+      <img src="https://raw.githubusercontent.com/Maxence1805/Veridiana_Photography/main/Photo%206.JPEG" alt="Autre prestation 5">
+    </div>
+  </section>
 
   <section id="contact">
-    <h2>📬 Contact</h2>
-    <p>Pour toute demande ou réservation, merci de me contacter à : <strong>veridiana.photo@email.com</strong><br>
+    <h2>Contact</h2>
+    <p>Pour toute demande ou réservation, merci de me contacter à : <strong>veridiana.van.eyck@gmail.com</strong><br>
     Téléphone : <strong>06.47.94.48.36</strong><br>
     Ou via Instagram : @veridiana_photography</p>
     <form action="https://formspree.io/f/moqgjqqo" method="POST">
@@ -209,25 +188,5 @@ header p {
   <footer>
     &copy; 2025 Veridiana Photography - Tous droits réservés
   </footer>
-
-  <!-- ✅ SCRIPT animation -->
-  <script>
-    const sections = document.querySelectorAll("section");
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>
